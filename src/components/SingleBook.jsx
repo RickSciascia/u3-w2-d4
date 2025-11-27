@@ -9,6 +9,7 @@ const SingleBook = function (props) {
     <>
       <Card
         // onClick={() => this.setState({ selected: !this.state.selected })}
+        data-testid="cards-border"
         onClick={() => props.changeSelectedBook(props.book.asin)}
         style={{
           border:
