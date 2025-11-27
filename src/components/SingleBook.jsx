@@ -15,7 +15,7 @@ const SingleBook = function (props) {
             props.selectedBook === props.book.asin ? "3px solid red" : "none",
         }}
       >
-        <Card.Img variant="top" src={props.book.img} />
+        <Card.Img variant="top" src={props.book.img} data-testid="cards" />
         <Card.Body>
           <Card.Title style={{ color: "black" }}>{props.book.title}</Card.Title>
         </Card.Body>
